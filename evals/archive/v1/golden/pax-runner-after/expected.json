@@ -1,0 +1,10 @@
+{
+  "disposition": "no_action",
+  "required_categories": [],
+  "forbidden_categories": [],
+  "rationale": "Functional behavior is exercised. No supported blocking concern from static evidence.",
+  "adjudicator": "Codex; AI-authored provisional oracle, requires independent human review",
+  "split": "holdout",
+  "later_selection_reference": "d83d39cdfb2ca8a0c73a4d4fdf21d0f323b5b113",
+  "selection_phase": "after"
+}

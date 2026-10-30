@@ -1,0 +1,17 @@
+test_300_attempts_conservative_cap (test_controls.Controls.test_300_attempts_conservative_cap) ... ok
+test_arbitrary_actions_rejected (test_controls.Controls.test_arbitrary_actions_rejected) ... ok
+test_bad_disposition (test_controls.Controls.test_bad_disposition) ... ok
+test_missing_key_fails_without_network (test_controls.Controls.test_missing_key_fails_without_network) ... ok
+test_output_cap (test_controls.Controls.test_output_cap) ... ok
+test_paths_and_traversal (test_controls.Controls.test_paths_and_traversal) ... ok
+test_prompt_injections_have_no_tools (test_controls.Controls.test_prompt_injections_have_no_tools) ... ok
+test_quotes_are_checked (test_controls.Controls.test_quotes_are_checked) ... ok
+test_real_api_payload_and_validation_using_transport_stub (test_controls.Controls.test_real_api_payload_and_validation_using_transport_stub) ... ok
+test_retry_counts (test_controls.Controls.test_retry_counts) ... ok
+test_schedule_reserves_14 (test_controls.Controls.test_schedule_reserves_14) ... ok
+test_skill_explicitly_loaded_not_expected (test_controls.Controls.test_skill_explicitly_loaded_not_expected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.026s
+
+OK

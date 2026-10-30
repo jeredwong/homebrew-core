@@ -1,0 +1,12 @@
+{
+  "disposition": "findings",
+  "required_categories": [
+    "missing_test"
+  ],
+  "forbidden_categories": [],
+  "rationale": "Formula has no test block; request a functional installed-package test.",
+  "adjudicator": "Codex; AI-authored provisional oracle, requires independent human review",
+  "split": "development",
+  "later_selection_reference": "753ac4485686f68ea342f32dc3a21be0e319579c",
+  "selection_phase": "before"
+}

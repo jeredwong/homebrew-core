@@ -1,0 +1,10 @@
+{
+  "disposition": "no_action",
+  "required_categories": [],
+  "forbidden_categories": [],
+  "rationale": "Already disabled at cutoff; avoid test churn.",
+  "adjudicator": "Codex; AI-authored provisional oracle, requires independent human review",
+  "split": "development",
+  "later_selection_reference": "21eeba0d82806698e91c91ea988f06991ebca599",
+  "selection_phase": "after"
+}

@@ -1,0 +1,1 @@
+{"observations":"The rmcast snapshot disables the formula on 2026-09-15, before the 2026-10-08 event cutoff. Although its test block contains only false, the procedure requires no_action for already disabled packages absent an independently supported relevant security concern; none is supplied.","report":{"case_id":"review","disposition":"no_action","findings":[]}}

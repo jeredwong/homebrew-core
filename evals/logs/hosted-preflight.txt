@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/output/homebrew-core-agent/scripts/run_agent.py", line 39, in <module>
+    p=argparse.ArgumentParser();p.add_argument("--case",required=True);p.add_argument("--out",required=True);a=p.parse_args();run(a.case,a.out)
+                                                                                                                              ^^^^^^^^^^^^^^^^^
+  File "/workspace/output/homebrew-core-agent/scripts/run_agent.py", line 16, in run
+    raise RuntimeError("ANTHROPIC_API_KEY is not configured; no inference attempted")
+RuntimeError: ANTHROPIC_API_KEY is not configured; no inference attempted

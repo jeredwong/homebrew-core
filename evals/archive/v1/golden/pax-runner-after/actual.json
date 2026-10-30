@@ -1,0 +1,14 @@
+{
+  "case_id": "pax-runner-after",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "dependency",
+      "path": "Formula/p/pax-runner.rb",
+      "line": 19,
+      "quote": "  depends_on \"openjdk\" => :test",
+      "reason": "The installed wrapper executes java, while the only JVM dependency is test-only. Tests supply Java explicitly and may hide a missing runtime dependency for users without a JVM.",
+      "verification": "Install on a clean machine without Java and run pax-runner; determine whether a runtime JVM dependency or documented external requirement is necessary."
+    }
+  ]
+}

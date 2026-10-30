@@ -1,0 +1,162 @@
+{
+  "sample_size": 30,
+  "observed_reviews": 28,
+  "without_qualifying_review": 2,
+  "median_hours_observed": 0.9508333333333334,
+  "p75_hours_observed_nearest_rank": 2.9452777777777777,
+  "over_24_hours_observed": 2,
+  "definition": "First submitted review by a non-author GitHub User other than BrewTestBot. User accounts can still be automated; issue comments are excluded. Missing reviews are not assigned zero latency.",
+  "sampling": "First 30 results sorted created ascending; excludes BrewTestBot only, not all automation; biased toward early September.",
+  "rows": [
+    {
+      "number": 301659,
+      "first_review_id": 5073812358,
+      "hours": 1.0577777777777777
+    },
+    {
+      "number": 301669,
+      "first_review_id": 5074231517,
+      "hours": 0.2288888888888889
+    },
+    {
+      "number": 301670,
+      "first_review_id": 5083906083,
+      "hours": 18.029722222222222
+    },
+    {
+      "number": 301683,
+      "first_review_id": 5076315231,
+      "hours": 0.8836111111111111
+    },
+    {
+      "number": 301684,
+      "first_review_id": null,
+      "hours": null
+    },
+    {
+      "number": 301695,
+      "first_review_id": 5076384963,
+      "hours": 0.3958333333333333
+    },
+    {
+      "number": 301697,
+      "first_review_id": 5076291599,
+      "hours": 0.02277777777777778
+    },
+    {
+      "number": 301698,
+      "first_review_id": 5076588181,
+      "hours": 0.3688888888888889
+    },
+    {
+      "number": 301707,
+      "first_review_id": 5080256314,
+      "hours": 4.868055555555555
+    },
+    {
+      "number": 301728,
+      "first_review_id": 5078395160,
+      "hours": 0.5144444444444445
+    },
+    {
+      "number": 301729,
+      "first_review_id": 5078326662,
+      "hours": 0.35555555555555557
+    },
+    {
+      "number": 301736,
+      "first_review_id": 5080817967,
+      "hours": 2.9452777777777777
+    },
+    {
+      "number": 301753,
+      "first_review_id": 5080167260,
+      "hours": 0.03888888888888889
+    },
+    {
+      "number": 301759,
+      "first_review_id": 5081053882,
+      "hours": 0.275
+    },
+    {
+      "number": 301771,
+      "first_review_id": 5086837546,
+      "hours": 14.046111111111111
+    },
+    {
+      "number": 301795,
+      "first_review_id": 5132050839,
+      "hours": 137.44361111111112
+    },
+    {
+      "number": 301796,
+      "first_review_id": 5084604237,
+      "hours": 5.424722222222222
+    },
+    {
+      "number": 301819,
+      "first_review_id": 5084609059,
+      "hours": 4.122777777777777
+    },
+    {
+      "number": 301831,
+      "first_review_id": 5125319679,
+      "hours": 110.07638888888889
+    },
+    {
+      "number": 301832,
+      "first_review_id": 5084757885,
+      "hours": 2.7483333333333335
+    },
+    {
+      "number": 301853,
+      "first_review_id": null,
+      "hours": null
+    },
+    {
+      "number": 301854,
+      "first_review_id": 5085212181,
+      "hours": 1.2733333333333334
+    },
+    {
+      "number": 301858,
+      "first_review_id": 5085071530,
+      "hours": 0.34
+    },
+    {
+      "number": 301864,
+      "first_review_id": 5086198895,
+      "hours": 2.43
+    },
+    {
+      "number": 301865,
+      "first_review_id": 5086071875,
+      "hours": 1.0116666666666667
+    },
+    {
+      "number": 301866,
+      "first_review_id": 5086179129,
+      "hours": 1.26
+    },
+    {
+      "number": 301879,
+      "first_review_id": 5086867102,
+      "hours": 0.89
+    },
+    {
+      "number": 301880,
+      "first_review_id": 5086864360,
+      "hours": 0.7794444444444445
+    },
+    {
+      "number": 301881,
+      "first_review_id": 5086846338,
+      "hours": 0.6394444444444445
+    },
+    {
+      "number": 301927,
+      "first_review_id": 5089470062,
+      "hours": 0.22416666666666665
+    }
+  ]
+}

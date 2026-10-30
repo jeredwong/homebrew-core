@@ -1,0 +1,17 @@
+{
+  "observations": "The complete 55-line formula installs vip but contains no test block and no disable! declaration. No source or build evidence supports additional installation, dependency, or platform findings.",
+  "report": {
+    "case_id": "review",
+    "disposition": "findings",
+    "findings": [
+      {
+        "category": "missing_test",
+        "path": "Formula/v/vip.rb",
+        "line": 50,
+        "quote": "    bin.install \"vip\"",
+        "reason": "The complete formula has no test block to exercise the installed pipeline editor, so its functional behavior is unverified by brew test.",
+        "verification": "On an appropriate Homebrew machine, add and run a functional test that pipes known text through the installed vip with a noninteractive editor helper and asserts the edited output; run brew test vip."
+      }
+    ]
+  }
+}

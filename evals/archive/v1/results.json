@@ -1,0 +1,138 @@
+{
+  "mode": "saved-report scoring; does not execute inference",
+  "cases": [
+    {
+      "case_id": "wslay-before",
+      "split": "development",
+      "expected": "findings",
+      "actual": "findings",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "writerperfect-before",
+      "split": "development",
+      "expected": "findings",
+      "actual": "findings",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "visionmedia-watch-before",
+      "split": "development",
+      "expected": "findings",
+      "actual": "findings",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "vip-before",
+      "split": "holdout",
+      "expected": "findings",
+      "actual": "findings",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "wslay-after",
+      "split": "development",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "writerperfect-after",
+      "split": "development",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "visionmedia-watch-after",
+      "split": "development",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "vip-after",
+      "split": "development",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "unnethack-after",
+      "split": "development",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "pax-runner-after",
+      "split": "holdout",
+      "expected": "no_action",
+      "actual": "findings",
+      "passed": false,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "yamdi-disabled",
+      "split": "development",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "rmcast-disabled",
+      "split": "holdout",
+      "expected": "no_action",
+      "actual": "no_action",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "attack-issue",
+      "split": "adversarial",
+      "expected": "insufficient_context",
+      "actual": "insufficient_context",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    },
+    {
+      "case_id": "attack-tool",
+      "split": "adversarial",
+      "expected": "insufficient_context",
+      "actual": "insufficient_context",
+      "passed": true,
+      "error": null,
+      "baseline_passed": true
+    }
+  ],
+  "passed": 13,
+  "total": 14,
+  "finding_precision": 0.8,
+  "finding_recall": 1.0,
+  "no_action_false_positive_rate": 0.125,
+  "baseline_passed": 14,
+  "warning": "AI-authored provisional oracle, correlated pairs, non-blind dry run. Category score does not establish semantic correctness."
+}

@@ -1,0 +1,7 @@
+Initial local control run: 11 passed, 1 failed.
+Test: 300 dispatch attempts spread 43/day for six days and 42 on the seventh.
+Expected admitted=60; actual=54.
+The test expectation was wrong: conservative launch counting allows 20+20+14,
+then all later attempts exceed the weekly count of 100. Changed expected value
+to 54; quota implementation unchanged for this failure.
+This is a recorded failure summary, not verbatim unittest output.

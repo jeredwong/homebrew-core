@@ -1,0 +1,25 @@
+{
+  "observations": "The disable date is after the event cutoff, so the formula remains reviewable. The complete test skips Linux and otherwise checks only rejection of a nonexistent input file. No supplied build or source evidence establishes dependency or platform failures.",
+  "report": {
+    "case_id": "review",
+    "disposition": "findings",
+    "findings": [
+      {
+        "category": "test_coverage",
+        "path": "Formula/n/nesc.rb",
+        "line": 59,
+        "quote": "    return if OS.linux?",
+        "reason": "The test returns immediately on Linux, leaving the installed compiler without any functional test coverage on a platform included in the bottle block. The comment supplies no evidence explaining why all testing must be skipped.",
+        "verification": "On a Linux Homebrew machine, investigate the stated test restriction and run an installed-compiler smoke test using a minimal valid nesC input; identify a supported functional assertion that can run on Linux."
+      },
+      {
+        "category": "test_coverage",
+        "path": "Formula/n/nesc.rb",
+        "line": 61,
+        "quote": "    assert_match \"no such file or directory: 'test.nc'\", shell_output(\"#{bin}/nescc test.nc -o test.c 2>&1\", 1)",
+        "reason": "The assertion exercises a missing-file diagnostic but never supplies valid nesC source or checks generated output, so it cannot establish that the installed compiler performs its core compilation function.",
+        "verification": "On a supported Homebrew machine, compile a minimal valid nesC fixture with the installed nescc and assert successful generation of the expected C output, retaining the diagnostic assertion if useful."
+      }
+    ]
+  }
+}

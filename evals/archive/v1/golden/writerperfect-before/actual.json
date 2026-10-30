@@ -1,0 +1,14 @@
+{
+  "case_id": "writerperfect-before",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/w/writerperfect.rb",
+      "line": 37,
+      "quote": "  def install",
+      "reason": "The installed converters have no formula test exercising document conversion.",
+      "verification": "Convert a small local WordPerfect document and verify its output text and document format."
+    }
+  ]
+}

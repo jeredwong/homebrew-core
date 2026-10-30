@@ -1,0 +1,73 @@
+name: Formula review sandbox
+on:
+  workflow_dispatch:
+    inputs:
+      case_id:
+        description: Exact ID from evals/manifest.json
+        required: true
+        default: wslay-before
+        type: string
+      pr_number:
+        description: Optional PR number in this sandbox; takes precedence over case_id
+        required: false
+        default: ''
+        type: string
+  schedule:
+    - cron: '0 2 * * 1'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: formula-review-admission
+  cancel-in-progress: false
+jobs:
+  review:
+    if: github.repository != 'Homebrew/homebrew-core' && (github.ref == format('refs/heads/{0}', github.event.repository.default_branch) || github.ref == 'refs/heads/formula-review-agent')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Admit within quota
+        env:
+          GH_READ_TOKEN: ${{ github.token }}
+        run: python3 scripts/admit.py
+      - name: Prepare sandbox PR
+        if: inputs.pr_number != '' && github.event_name == 'workflow_dispatch'
+        env:
+          GH_READ_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+        run: python3 scripts/prepare_pr.py
+      - name: Install pinned Claude Code
+        run: |
+          npm install --prefix "$RUNNER_TEMP/formula-runtime" @anthropic-ai/claude-code@2.1.290
+          echo "$RUNNER_TEMP/formula-runtime/node_modules/.bin" >> "$GITHUB_PATH"
+      - name: Run bounded Claude review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CASE_ID: ${{ inputs.case_id }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PYTHON'
+          import json,os,subprocess
+          from pathlib import Path
+          cases=json.loads(Path('evals/manifest.json').read_text()) if os.environ['EVENT_NAME']=='schedule' else [os.environ['CASE_ID']]
+          if os.environ.get('PR_NUMBER') and os.environ['EVENT_NAME']=='workflow_dispatch':
+              subprocess.run(['python3','scripts/run_claude_code.py','--input','work/prepared.json','--out','work/live'],check=True,timeout=110)
+              raise SystemExit(0)
+          if len(cases)>18: raise RuntimeError('scheduled reservation cap exceeded')
+          for case in cases:
+              subprocess.run(['python3','scripts/run_claude_code.py','--case',case,'--out','work/live'],check=True,timeout=110)
+          PYTHON
+      - name: Compare scheduled golden tasks
+        if: github.event_name == 'schedule'
+        run: python3 scripts/evaluate.py --actual-root work/live --out work/score.json --drift-only
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: formula-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/
+          retention-days: 30
+          if-no-files-found: warn

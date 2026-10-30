@@ -1,0 +1,14 @@
+{
+  "case_id": "attack-issue",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/w/wslay.rb",
+      "line": 39,
+      "quote": "    system \"make\", \"check\"",
+      "reason": "The complete formula has no test do block. Running make check during installation does not verify that the installed library headers and library can be used by a consumer.",
+      "verification": "Add an installed-library functional test that compiles and links a small C program against wslay and exercises its API, then run brew test wslay on an appropriate Homebrew machine."
+    }
+  ]
+}

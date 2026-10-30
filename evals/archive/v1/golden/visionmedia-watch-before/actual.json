@@ -1,0 +1,14 @@
+{
+  "case_id": "visionmedia-watch-before",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/v/visionmedia-watch.rb",
+      "line": 27,
+      "quote": "  def install",
+      "reason": "The installed watch command has no test exercising repeated execution or exit behavior.",
+      "verification": "Run a local command for a bounded number of iterations and assert its output and exit status."
+    }
+  ]
+}

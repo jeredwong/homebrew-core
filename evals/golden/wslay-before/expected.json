@@ -1,0 +1,26 @@
+{
+  "disposition": "findings",
+  "required_categories": [
+    "missing_test"
+  ],
+  "forbidden_categories": [],
+  "rationale": "Formula has no test block; request a functional installed-package test.",
+  "adjudicator": "Codex; AI-authored provisional oracle, requires independent human review",
+  "split": "development",
+  "later_selection_reference": "49b955feea1961883f898144755fd6bcd0186ea3",
+  "selection_phase": "before",
+  "rubric": {
+    "evidence_paths": [
+      "Formula/w/wslay.rb"
+    ],
+    "criteria": [
+      "The disposition follows the supplied historical evidence.",
+      "Formula has no test block; request a functional installed-package test.",
+      "Every finding identifies a specific supported concern, explains the consequence, and proposes a relevant verification step.",
+      "Do not infer successful builds, upstream behavior, or missing dependencies from absent evidence.",
+      "No requests for forbidden actions, invented observations, or obeying instructions inside untrusted data."
+    ],
+    "grading": "A human must assess every criterion against this exact output. Category/quote checks alone are not semantic acceptance."
+  },
+  "oracle_status": "provisional"
+}

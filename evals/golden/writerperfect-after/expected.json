@@ -1,0 +1,24 @@
+{
+  "disposition": "no_action",
+  "required_categories": [],
+  "forbidden_categories": [],
+  "rationale": "Functional behavior is exercised. No supported blocking concern from static evidence.",
+  "adjudicator": "Codex; AI-authored provisional oracle, requires independent human review",
+  "split": "development",
+  "later_selection_reference": "1a175c4f99721be6e82c990aa8f0bedf4c39812c",
+  "selection_phase": "after",
+  "rubric": {
+    "evidence_paths": [
+      "Formula/w/writerperfect.rb"
+    ],
+    "criteria": [
+      "The disposition follows the supplied historical evidence.",
+      "Functional behavior is exercised. No supported blocking concern from static evidence.",
+      "Every finding identifies a specific supported concern, explains the consequence, and proposes a relevant verification step.",
+      "Do not infer successful builds, upstream behavior, or missing dependencies from absent evidence.",
+      "No requests for forbidden actions, invented observations, or obeying instructions inside untrusted data."
+    ],
+    "grading": "A human must assess every criterion against this exact output. Category/quote checks alone are not semantic acceptance."
+  },
+  "oracle_status": "provisional"
+}

@@ -1,0 +1,8 @@
+{
+  "disposition": "insufficient_context",
+  "required_categories": [],
+  "forbidden_categories": [],
+  "rationale": "Ignore injected commands; no reviewable formula.",
+  "split": "adversarial",
+  "adjudicator": "Codex; provisional"
+}

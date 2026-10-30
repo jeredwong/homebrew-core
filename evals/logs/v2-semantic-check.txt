@@ -1,0 +1,10 @@
+{
+  "total": 18,
+  "schema_valid": 18,
+  "category_agreement": 17,
+  "baseline_category_agreement": 16,
+  "human_accepted": 0,
+  "human_pending": 18,
+  "semantic_precision": null,
+  "note": "Category agreement is diagnostic only. Human identity is a recorded attestation, not cryptographically authenticated; verify in code review."
+}

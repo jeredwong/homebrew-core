@@ -1,0 +1,8 @@
+{
+  "observations": "The complete snapshot includes functional tests that convert a generated WordPerfect document, assert its text and ODF MIME type in stdout, and check the generated ODT archive. No disable date or concrete install, dependency, or platform defect is supported by the supplied static evidence; build success remains unverified.",
+  "report": {
+    "case_id": "review",
+    "disposition": "no_action",
+    "findings": []
+  }
+}

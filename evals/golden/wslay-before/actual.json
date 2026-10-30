@@ -1,0 +1,14 @@
+{
+  "case_id": "wslay-before",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/w/wslay.rb",
+      "line": 39,
+      "quote": "    system \"make\", \"check\"",
+      "reason": "The complete formula has no test block. Running upstream checks during installation does not verify that consumers can compile, link, and exercise the installed websocket library.",
+      "verification": "Add a functional formula test that compiles and links a small C program against the installed wslay library and asserts meaningful API behavior, then run brew test wslay on an appropriate Homebrew machine."
+    }
+  ]
+}

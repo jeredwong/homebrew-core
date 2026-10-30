@@ -1,0 +1,14 @@
+{
+  "case_id": "wslay-before",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/w/wslay.rb",
+      "line": 36,
+      "quote": "  def install",
+      "reason": "The formula runs build-tree make check but has no installed-library test. This leaves installed headers, linkage and API behavior unverified.",
+      "verification": "Compile and run a small program against the installed wslay library."
+    }
+  ]
+}

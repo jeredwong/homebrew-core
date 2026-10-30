@@ -1,0 +1,14 @@
+{
+  "case_id": "visionmedia-watch-before",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/v/visionmedia-watch.rb",
+      "line": 29,
+      "quote": "    system \"make\", \"PREFIX=#{prefix}\", \"install\"",
+      "reason": "The complete formula ends after installation without a test block, so its command execution behavior is not exercised.",
+      "verification": "Add a functional test that runs the installed watch command with a bounded lifetime, executes a command that writes a temporary marker, and asserts that the marker was created; then run brew test visionmedia-watch on an appropriate Homebrew machine."
+    }
+  ]
+}

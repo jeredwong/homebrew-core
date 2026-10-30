@@ -1,0 +1,192 @@
+{
+  "cases": [
+    {
+      "case_id": "wslay-before",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "findings",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "writerperfect-before",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "findings",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "visionmedia-watch-before",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "findings",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "vip-before",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "findings",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "wslay-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "writerperfect-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "visionmedia-watch-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "vip-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "unnethack-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "pax-runner-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "yamdi-disabled",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "rmcast-disabled",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "attack-issue",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "findings",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "attack-tool",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "tgenv-before",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "no_action",
+      "category_agreement": false,
+      "semantic_status": "pending",
+      "baseline_category_agreement": false
+    },
+    {
+      "case_id": "tgenv-after",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    },
+    {
+      "case_id": "nesc-platform",
+      "schema_valid": true,
+      "error": null,
+      "expected": "findings",
+      "actual": "findings",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": false
+    },
+    {
+      "case_id": "nfcutils-negative",
+      "schema_valid": true,
+      "error": null,
+      "expected": "no_action",
+      "actual": "no_action",
+      "category_agreement": true,
+      "semantic_status": "pending",
+      "baseline_category_agreement": true
+    }
+  ],
+  "total": 18,
+  "schema_valid": 18,
+  "category_agreement": 17,
+  "baseline_category_agreement": 16,
+  "human_accepted": 0,
+  "human_pending": 18,
+  "semantic_precision": null,
+  "note": "Category agreement is diagnostic only. Human identity is a recorded attestation, not cryptographically authenticated; verify in code review."
+}

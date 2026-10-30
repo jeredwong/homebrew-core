@@ -1,0 +1,9 @@
+{
+  "repository": "Homebrew/homebrew-core",
+  "tip": "cedbcd2234606432937d6cc815ba5dd0ed29d338",
+  "period": "2026-09-01T00:00:00Z <= committer date < 2026-10-01T00:00:00Z (git --until boundary inclusive; verified no boundary commit)",
+  "count": 21607,
+  "bottle_subjects": 12364,
+  "rows_archive": "september-2026-formula-commits.json.gz",
+  "uncompressed_sha256": "e6544d34ede9eb815c8d17033a14b509c7c2013eda39910c402a285627a2a047"
+}

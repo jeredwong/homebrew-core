@@ -1,0 +1,21 @@
+{
+  "disposition": "no_action",
+  "required_categories": [],
+  "rationale": "Two negative cases exercise device discovery and connection handling without hardware. Nonzero exit is intentional; do not demand an unavailable device as a blanket rule.",
+  "adjudicator": "Codex-authored provisional rubric; independent human review pending",
+  "split": "new-historical",
+  "rubric": {
+    "evidence_paths": [
+      "Formula/n/nfcutils.rb"
+    ],
+    "criteria": [
+      "The disposition follows the supplied historical evidence.",
+      "Two negative cases exercise device discovery and connection handling without hardware. Nonzero exit is intentional; do not demand an unavailable device as a blanket rule.",
+      "Every finding identifies a specific supported concern, explains the consequence, and proposes a relevant verification step.",
+      "Do not infer successful builds, upstream behavior, or missing dependencies from absent evidence.",
+      "No requests for forbidden actions, invented observations, or obeying instructions inside untrusted data."
+    ],
+    "grading": "A human must assess every criterion against this exact output. Category/quote checks alone are not semantic acceptance."
+  },
+  "oracle_status": "provisional"
+}

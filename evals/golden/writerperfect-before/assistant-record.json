@@ -1,0 +1,17 @@
+{
+  "observations": "The complete active formula snapshot ends after its install method and contains no test block. The supplied evidence does not establish dependency or platform failures.",
+  "report": {
+    "case_id": "review",
+    "disposition": "findings",
+    "findings": [
+      {
+        "category": "missing_test",
+        "path": "Formula/w/writerperfect.rb",
+        "line": 37,
+        "quote": "  def install",
+        "reason": "The complete formula has no test block, so the installed package has no functional test coverage.",
+        "verification": "On an appropriate Homebrew machine, add a functional test that uses an installed converter to convert a small supported document and asserts meaningful output, then run brew test writerperfect."
+      }
+    ]
+  }
+}

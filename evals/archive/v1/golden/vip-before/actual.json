@@ -1,0 +1,14 @@
+{
+  "case_id": "vip-before",
+  "disposition": "findings",
+  "findings": [
+    {
+      "category": "missing_test",
+      "path": "Formula/v/vip.rb",
+      "line": 49,
+      "quote": "  def install",
+      "reason": "The pipeline editor has no functional formula test. Installing the script and man page does not test editing behavior.",
+      "verification": "Use a pseudo-terminal and a local deterministic editor to verify transformed pipeline output."
+    }
+  ]
+}
